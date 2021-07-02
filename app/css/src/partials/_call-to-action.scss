@@ -1,0 +1,101 @@
+.page__calltoaction {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 50px;
+    padding-bottom: 55px;
+
+    @include media($breakpoint-medium) {
+        padding-top: 95px;
+        padding-bottom: 90px;
+    }
+
+    @include media($breakpoint-large) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border: 1px solid transparent;
+        border-top: none;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.7;
+        z-index: 9;
+    }
+}
+
+.calltoaction__container {
+    @extend .u-container;
+
+    position: relative;
+    z-index: 10;
+}
+
+.calltoaction__content {
+    color: #fff;
+    text-align: center;
+
+    @include media($breakpoint-medium) {
+        margin: auto;
+        width: 75%;
+    }
+
+    @include media($breakpoint-large) {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.calltoaction__text {
+    @include media($breakpoint-large) {
+        width: 60%;
+    }
+}
+
+.calltoaction__title {
+    @include media($breakpoint-large) {
+        margin-bottom: 15px;
+    }
+}
+
+.calltoaction__subtitle {
+    padding-bottom: 10px;
+    @include media($breakpoint-large) {
+        padding-bottom: 25px;
+    }
+    @include media($breakpoint-large) {
+        padding-bottom: 0;
+        width: 70%;
+    }
+}
+
+.calltoaction__button {
+    @include media($breakpoint-large) {
+        width: 25%;
+        margin-top: 7%;
+    }
+
+}
+
+.calltoaction__link {
+    margin-top: 20px;
+    @include media($breakpoint-medium) {
+        width: 40%;
+        max-width: 40%;
+    }
+    @include media($breakpoint-large) {
+        float: right;
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -58,7 +58,13 @@
     $Layout
 </div>
     <% include Footer %>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+
     <% require themedJavascript('javascript/dist/app') %>
+
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>

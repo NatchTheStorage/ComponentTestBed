@@ -1,0 +1,13 @@
+---
+Name: elements
+---
+
+App\Pages\ContentPage:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+
+App\Pages\AboutPage:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+  allowed_elements:
+    - DNADesign\Elemental\Models\ElementContent

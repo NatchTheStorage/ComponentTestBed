@@ -1,0 +1,11 @@
+.element__slider {
+    margin-bottom: 25px;
+    @include media($breakpoint-medium) {
+        margin-bottom: 40px;
+    }
+}
+
+.element__slider-cell {
+    text-align: center;
+    width: 50%;
+}

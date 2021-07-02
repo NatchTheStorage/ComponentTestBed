@@ -1,0 +1,97 @@
+.accordion__top {
+    @extend %h2;
+
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 4px;
+    padding-top: 2px;
+
+
+    &:focus {
+        outline: 5px auto cornflowerblue;
+    }
+
+    img {
+        margin-left: 10px;
+        vertical-align: middle;
+        transition: transform .3s ease-in-out;
+        width: 20px;
+        height: 30px;
+
+        @include media($breakpoint-medium) {
+            width: 25px;
+            height: 35px;
+        }
+
+        @include media($breakpoint-large) {
+            width: 30px;
+            height: 40px;
+        }
+    }
+}
+
+.accordion__container {
+    border: none;
+
+    &.is-active {
+        .accordion__top img {
+            transform: rotate(180deg);
+            mix-blend-mode: multiply;
+            fill: green;
+        }
+        .accordion__text {
+            display: block;
+        }
+    }
+}
+
+.accordion__text {
+    width: 100%;
+    margin-top: -5px;
+    display: none;
+}
+
+.element__accordion_element {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include media($breakpoint-medium) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include media($breakpoint-large) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.accordion_element__list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion_element__title {
+    padding-bottom: 15px;
+    @include media($breakpoint-medium) {
+        padding-bottom: 30px;
+    }
+    @include media($breakpoint-large) {
+        padding-bottom: 60px;
+    }
+}
+
+.accordion_element__accordion {
+    margin-bottom: 22px;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.accordion_element__text {
+    padding-right: 25px;
+    padding-bottom: -3px;
+}

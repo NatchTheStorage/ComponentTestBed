@@ -23,5 +23,8 @@
     "sass-loader": "^10.0.4",
     "vue-template-compiler": "^2.6.11"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flickity": "^2.2.2",
+    "flickity-fullscreen": "^1.1.1"
+  }
 }

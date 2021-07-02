@@ -42,3 +42,4 @@ SilverStripe\i18n\i18n:
 Page:
   extensions:
     - App\Extensions\OpenGraphExtension
+    - App\Extensions\CallToActionExtension
