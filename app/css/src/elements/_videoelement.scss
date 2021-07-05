@@ -15,25 +15,23 @@ $videoheight: 100%;
 }
 
 .v-container {
-    @extend .u-container;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    position: relative;
     overflow: hidden;
-    @include media($breakpoint-medium) {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
+    padding: 0 0 56.25% 0;
+    width: 100% !important;
 
-.video__iframe {
-    width: $videowidth;
-    margin: auto;
-    min-height: 210px;
-    @include media($breakpoint-medium) {
-        min-height: 400px;
-    }
-    @include media($breakpoint-large) {
-        min-height: 650px;
+    .video__iframe {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        margin: auto;
+        @include media($breakpoint-medium) {
+            min-height: 400px;
+        }
+        @include media($breakpoint-large) {
+            min-height: 650px;
+        }
     }
 }

@@ -1,24 +1,32 @@
 .element__textimage {
+    $textimage-gap: 50px;
 
     margin: 30px 0;
     @include media($breakpoint-medium) {
         margin: 40px 0;
     }
-
     @include media($breakpoint-large) {
         margin: 50px 0;
+        display: flex;
+
+        .textimage__text {
+            width: 50%;
+            padding-right: $textimage-gap;
+        }
+
+        &.image-on-left {
+            flex-direction: row-reverse;
+
+            .textimage__text {
+                padding-left: $textimage-gap;
+            }
+        }
     }
 }
 
-.textimage__text {
-    @include media($breakpoint-large) {
-        width: 50%;
-        padding-right: 115px;
-    }
-}
 
 .textimage__title {
-
+    width: auto;
 }
 
 .textimage__content {
@@ -39,31 +47,34 @@
 
 .textimage__image {
     text-align: center;
-    border-bottom: solid 1px #aaa;
     padding-bottom: 12px;
     @include media($breakpoint-medium) {
-        padding-bottom: 0;
-        border-bottom: none;
     }
     @include media($breakpoint-large) {
         width: 50%;
-        padding-left: 15px;
-    }
-    .video__iframe {
-        min-height: 180px;
-        max-width: 600px;
-        @include media($breakpoint-medium) {
-            min-height: 350px;
-        }
-        @include media($breakpoint-large) {
-            max-height: 350px
-        }
-        height: 100%;
     }
 }
 
 .textimage__image__image {
     width: 100%;
+}
+
+.textimage__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    @include media($breakpoint-large) {
+        width: 50%;
+        padding-bottom: 25%;
+    }
+
+    .video__iframe {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
 }
 
 .textimage__buttoncontainer {
@@ -74,5 +85,9 @@
         padding-bottom: 30px;
         text-align: center;
         margin: auto;
+    }
+
+    .textimage__button {
+
     }
 }

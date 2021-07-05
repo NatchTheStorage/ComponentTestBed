@@ -14,14 +14,17 @@
                 </div>
             <% end_if %>
         </div>
-        <div class="textimage__image">
-            <% if $Image %>
+        <% if $Image %>
+            <div class="textimage__image">
                 <img class="textimage__image__image" src="$Image.URL" alt="$Image.Title">
-            <% else %>
-                <% if $VideoLink %>
+            </div>
+        <% else %>
+            <% if $VideoLink %>
+                <div class="textimage__video">
                     <% include Video VideoLink=$returnParsedLink %>
-                <% end_if %>
+                </div>
             <% end_if %>
-        </div>
+        <% end_if %>
+
     </div>
 </div>

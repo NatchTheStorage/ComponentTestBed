@@ -65,6 +65,7 @@ class TextImageElement extends BaseElement
         return self::$singular_name;
     }
 
+    // Calls a method which handles yourtube links
     public function returnParsedLink()
     {
         return $this->manipulateYoutubeLink($this->VideoLink);
