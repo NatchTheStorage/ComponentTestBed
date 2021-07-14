@@ -1,5 +1,5 @@
 .element__textimage {
-    $textimage-gap: 50px;
+    $textimage-gap: 25px;
 
     margin: 30px 0;
     @include media($breakpoint-medium) {
@@ -13,12 +13,19 @@
             width: 50%;
             padding-right: $textimage-gap;
         }
+        .textimage__image {
+            width: 50%;
+            padding-left: $textimage-gap;
+        }
 
         &.image-on-left {
             flex-direction: row-reverse;
 
             .textimage__text {
                 padding-left: $textimage-gap;
+            }
+            .textimage__image {
+                padding-right: $textimage-gap;
             }
         }
     }

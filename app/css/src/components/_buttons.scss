@@ -1,0 +1,87 @@
+$buttoncolor: #00f;
+$buttonhovercolor: #0af;
+$buttondisabledcolor: #555;
+$buttontextcolor: #fff; /* Delete this and extend some other text format */
+
+.c-button {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: color .3s ease-in-out,
+    background-color .3s ease-in-out,
+    border-color .3s ease-in-out;
+    padding: 22px 28px;
+    background: $buttoncolor;
+    color: $buttontextcolor;
+    border: 1px solid $buttoncolor;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 370px;
+
+    // This fixes the appearance of MACOSX form buttons being odd
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        border: 1px solid transparent;
+        border-top: none;
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(transparent 0%, $buttontextcolor 400%);
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: $buttonhovercolor;
+        border: 1px solid $buttonhovercolor;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: lighten($buttoncolor, 20%);
+        opacity: 0.8;
+
+        &:hover {
+            background-color: $buttondisabledcolor;
+        }
+    }
+
+    &.c-button--outlined {
+        color: $buttoncolor;
+        background: transparent;
+        border-color: $buttoncolor;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $buttoncolor;
+            color: $buttontextcolor;
+        }
+    }
+
+    &.c-button--solid {
+        &::after {
+            display: none;
+        }
+    }
+
+    &.c-button--skinny {
+        padding: 15px 28px;
+
+        @include media($breakpoint-medium) {
+            padding: 17px 28px;
+        }
+    }
+
+    &.c-button--full {
+        max-width: none;
+    }
+}

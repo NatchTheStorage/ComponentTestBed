@@ -1,0 +1,110 @@
+// Colors ==============================================================================================================
+
+$tableelement_color-main: #00f;
+$tableelement_color-head: #000;
+$tableelement_color-rowtitle: #000;
+$tableelement_color-row: #000;
+$tableelement_color-event: #000;
+$tableelement_color-background: #eee;
+$tableelement_color-accent: #000;
+
+$tableelement_color-scrollmain: #777;
+$tableelement_color-scrollhover: #aaa;
+$tableelement_color-scrolldark: #111;
+
+$tableelement_color-title: #000;
+
+.element-table {
+    color: $tableelement_color-title;
+    overflow: auto;
+}
+
+// WRAPPER =============================================================================================================
+
+.table-element-wrapper {
+    padding-bottom: 30px;
+
+    background-color: $tableelement_color-background;
+
+    //SCROLLBAR STYLING
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $tableelement_color-scrolldark;
+        border-radius: 15px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $tableelement_color-scrollmain;
+        width: 12px;
+        border-radius: 12px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $tableelement_color-scrollhover;
+    }
+}
+
+.table-element-title {
+    color: $tableelement_color-title;
+}
+
+.table-element {
+    padding-bottom: 30px;
+    display: table;
+    width: 100%;
+    text-align: left;
+
+    td {
+        padding: 16px 13px 16px 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    thead {
+        box-shadow: 0 1px $tableelement_color-accent;
+    }
+}
+
+.table-element-times {
+    @extend .table-element-row-text;
+
+    width: 160px;
+}
+
+.table-element-headers {
+    min-width: 125px;
+    padding: 24px 13px 24px 0;
+    color: $tableelement_color-head;
+}
+
+.table-element-row-text {
+    color: $tableelement_color-row;
+    padding-right: 27px;
+    padding-left: 0;
+
+    &.rowtitle {
+        color: $tableelement_color-rowtitle;
+        min-width: 90px
+    }
+}
+
+
+.table-element-rowdivider {
+    box-shadow: 0 1px $tableelement_color-accent;
+}
+
+.table-element-element-footnotes {
+    color: $tableelement_color-title;
+
+    margin-bottom: 30px;
+}
+
+

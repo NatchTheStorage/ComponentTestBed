@@ -2,7 +2,6 @@
 
 namespace App\Elements;
 
-use App\Utils\Utilities;
 use DNADesign\Elemental\Models\BaseElement;
 use gorriecoe\Link\Models\Link;
 use SilverShop\HasOneField\HasOneButtonField;

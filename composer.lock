@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8e712aff1a9412bdf5fe2fec38db2b8",
+    "content-hash": "d6972b5e2f95faf33e5a906f8d784b8b",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -591,6 +591,58 @@
                 }
             ],
             "time": "2020-04-20T04:51:25+00:00"
+        },
+        {
+            "name": "gorriecoe/silverstripe-linkfield",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gorriecoe/silverstripe-linkfield.git",
+                "reference": "fdd3723921ee92b198194a9bddacab52c99bbfea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gorriecoe/silverstripe-linkfield/zipball/fdd3723921ee92b198194a9bddacab52c99bbfea",
+                "reference": "fdd3723921ee92b198194a9bddacab52c99bbfea",
+                "shasum": ""
+            },
+            "require": {
+                "gorriecoe/silverstripe-link": "^1.0",
+                "silvershop/silverstripe-hasonefield": "3.0.4",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "linkfield",
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Gorrie Coe",
+                    "email": "gorriecoe@gmail.com"
+                }
+            ],
+            "description": "Adds a Linkfield for gorriecoe/silverstripe-link",
+            "homepage": "http://github.com/gorriecoe/silverstripe-linkfield",
+            "keywords": [
+                "cms",
+                "link",
+                "modular",
+                "silverstripe"
+            ],
+            "funding": [
+                {
+                    "url": "https://ko-fi.com/gorrie",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2020-05-20T02:40:52+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1220,16 +1272,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.5",
+            "version": "v4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "4432ba399e47c66624bc73c8c0f811e5c109576f"
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4432ba399e47c66624bc73c8c0f811e5c109576f",
-                "reference": "4432ba399e47c66624bc73c8c0f811e5c109576f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fe14cf3672a149364fb66dfe11bf6549af899f94",
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94",
                 "shasum": ""
             },
             "require": {
@@ -1268,7 +1320,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2021-05-03T19:11:20+00:00"
+            "time": "2021-07-03T13:36:55+00:00"
         },
         {
             "name": "psr/cache",
@@ -1552,16 +1604,16 @@
         },
         {
             "name": "silvershop/silverstripe-hasonefield",
-            "version": "3.0.5",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silvershop/silverstripe-hasonefield.git",
-                "reference": "478a13d73759ab026fbb9177d0f771dfa4679277"
+                "reference": "a9a454d36e985d68c3d9a3fb7b19c01c00aa4a14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silvershop/silverstripe-hasonefield/zipball/478a13d73759ab026fbb9177d0f771dfa4679277",
-                "reference": "478a13d73759ab026fbb9177d0f771dfa4679277",
+                "url": "https://api.github.com/repos/silvershop/silverstripe-hasonefield/zipball/a9a454d36e985d68c3d9a3fb7b19c01c00aa4a14",
+                "reference": "a9a454d36e985d68c3d9a3fb7b19c01c00aa4a14",
                 "shasum": ""
             },
             "require": {
@@ -1599,7 +1651,7 @@
                 }
             ],
             "description": "Edit a has_one relationship using a GridField, triggered by clicking a button.",
-            "time": "2020-07-30T20:54:18+00:00"
+            "time": "2020-03-16T17:28:43+00:00"
         },
         {
             "name": "silverstripe/admin",
@@ -2970,16 +3022,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v4.4.25",
+            "version": "v4.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "e2486bd59ac996afff25cdbfb823e982a0550c3e"
+                "reference": "fcdbaf8af546939eeed5e32399656da2ad371aaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/e2486bd59ac996afff25cdbfb823e982a0550c3e",
-                "reference": "e2486bd59ac996afff25cdbfb823e982a0550c3e",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/fcdbaf8af546939eeed5e32399656da2ad371aaf",
+                "reference": "fcdbaf8af546939eeed5e32399656da2ad371aaf",
                 "shasum": ""
             },
             "require": {
@@ -3056,7 +3108,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:39:37+00:00"
+            "time": "2021-06-23T18:14:43+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -3136,16 +3188,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.4.25",
+            "version": "v4.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "2803882bb10353d277d4539635dd688a053d571c"
+                "reference": "1cb26cdb8a9834d8494cadd284602fa0647b73e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/2803882bb10353d277d4539635dd688a053d571c",
-                "reference": "2803882bb10353d277d4539635dd688a053d571c",
+                "url": "https://api.github.com/repos/symfony/config/zipball/1cb26cdb8a9834d8494cadd284602fa0647b73e5",
+                "reference": "1cb26cdb8a9834d8494cadd284602fa0647b73e5",
                 "shasum": ""
             },
             "require": {
@@ -3206,20 +3258,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T11:20:16+00:00"
+            "time": "2021-06-21T14:51:25+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.3.0",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "348116319d7fb7d1faa781d26a48922428013eb2"
+                "reference": "19b71c8f313b411172dd5f470fd61f24466d79a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/348116319d7fb7d1faa781d26a48922428013eb2",
-                "reference": "348116319d7fb7d1faa781d26a48922428013eb2",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/19b71c8f313b411172dd5f470fd61f24466d79a9",
+                "reference": "19b71c8f313b411172dd5f470fd61f24466d79a9",
                 "shasum": ""
             },
             "require": {
@@ -3265,7 +3317,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-30T07:27:52+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3712,16 +3764,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.4.25",
+            "version": "v4.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "dfe132c5c6d89f90ce7f961742cc532e9ca16dd4"
+                "reference": "2f7fa60b8d10ca71c30dc46b0870143183a8f131"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/dfe132c5c6d89f90ce7f961742cc532e9ca16dd4",
-                "reference": "dfe132c5c6d89f90ce7f961742cc532e9ca16dd4",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/2f7fa60b8d10ca71c30dc46b0870143183a8f131",
+                "reference": "2f7fa60b8d10ca71c30dc46b0870143183a8f131",
                 "shasum": ""
             },
             "require": {
@@ -3793,7 +3845,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:39:37+00:00"
+            "time": "2021-06-06T08:51:46+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -3872,16 +3924,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "df663fb63bdcd7298373cbd431165ab031706cb2"
+                "reference": "903c2c0babd6267de5bcb2995e8fc1efb5f01f1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/df663fb63bdcd7298373cbd431165ab031706cb2",
-                "reference": "df663fb63bdcd7298373cbd431165ab031706cb2",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/903c2c0babd6267de5bcb2995e8fc1efb5f01f1f",
+                "reference": "903c2c0babd6267de5bcb2995e8fc1efb5f01f1f",
                 "shasum": ""
             },
             "require": {
@@ -3938,20 +3990,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-09T10:57:10+00:00"
+            "time": "2021-06-27T09:16:08+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.4.25",
+            "version": "v4.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "81cdac5536925c1c4b7b50aabc9ff6330b9eb5fc"
+                "reference": "e096ef4b4c4c9a2f72c2ac660f54352cd31c60f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/81cdac5536925c1c4b7b50aabc9ff6330b9eb5fc",
-                "reference": "81cdac5536925c1c4b7b50aabc9ff6330b9eb5fc",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e096ef4b4c4c9a2f72c2ac660f54352cd31c60f8",
+                "reference": "e096ef4b4c4c9a2f72c2ac660f54352cd31c60f8",
                 "shasum": ""
             },
             "require": {
@@ -4006,7 +4058,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:39:37+00:00"
+            "time": "2021-06-23T19:06:53+00:00"
         },
         {
             "name": "unclecheese/display-logic",
