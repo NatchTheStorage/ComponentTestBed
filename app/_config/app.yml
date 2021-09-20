@@ -43,3 +43,7 @@ Page:
   extensions:
     - App\Extensions\OpenGraphExtension
     - App\Extensions\CallToActionExtension
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - App\Extensions\ElementExtension

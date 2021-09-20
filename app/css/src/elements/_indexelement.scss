@@ -1,0 +1,45 @@
+.element__index {
+    @extend .u-container;
+
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include media($breakpoint-medium) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include media($breakpoint-large) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.index__links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    @include media($breakpoint-medium) {
+        margin: -15px;
+    }
+    @include media($breakpoint-large) {
+        margin: -20px;
+    }
+}
+
+.index__link-container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include media($breakpoint-medium) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include media($breakpoint-large) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.index__link {
+    @extend .c-button, .c-button--outlined;
+}
