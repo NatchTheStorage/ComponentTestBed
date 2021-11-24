@@ -3,6 +3,9 @@
 namespace App\Elements;
 
 use DNADesign\Elemental\Models\BaseElement;
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\File;
+use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\TextField;
 
 class VideoElement extends BaseElement
@@ -14,7 +17,12 @@ class VideoElement extends BaseElement
     private static $icon = 'font-icon-block-video';
 
     private static $db = [
-        "VideoLink"=> "Varchar(200)"
+        'VimeoLink' => "Text",
+        'YoutubeLink' => 'Text'
+    ];
+
+    private static $has_one = [
+        'VideoFile' => File::class
     ];
 
     private static $inline_editable = false;
@@ -23,13 +31,22 @@ class VideoElement extends BaseElement
     {
         $fields = parent::getCMSFields();
         $fields->removeFieldsFromTab('Root.Main', [
-            'Title'
+            'Title', 'VimeoLink', 'YoutubeLink', 'VideoFile', 'lf1'
         ]);
         $fields->addFieldsToTab('Root.Main', [
             TextField::create("Title")
             ->setDescription('This title does not show on the page, only for CMS organisation'),
-            TextField::create("VideoLink", "Video Link")
-                ->setDescription("Add a Youtube Video link here!"),
+
+            LiteralField::create('lf1', '<h2>Video Priority</h2><br>
+                <p>Please only use one of the following fields when adding a video.
+                The Vimeo Link will take priority, followed by Youtube, then the file upload.</p>'),
+
+            TextField::create('VimeoLink', 'Vimeo Link')
+                ->setDescription('Insert the vimeo ID of the video here'),
+            TextField::create('YoutubeLink', 'Youtube Link')
+                ->setDescription('Insert the full URL of the Youtube video here'),
+            UploadField::create('VideoFile')
+                ->setDescription('Add a video file here!')
         ]);
         return $fields;
     }

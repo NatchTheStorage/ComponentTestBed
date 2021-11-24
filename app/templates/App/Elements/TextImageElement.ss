@@ -21,7 +21,7 @@
         <% else %>
             <% if $VideoLink %>
                 <div class="textimage__video">
-                    <% include Video VideoLink=$returnParsedLink %>
+                    <% include YoutubeVideo VideoLink=$returnParsedLink %>
                 </div>
             <% end_if %>
         <% end_if %>
